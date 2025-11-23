@@ -30,6 +30,8 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/custom.css" rel="stylesheet">
+
 
   <!-- =======================================================
   * Template Name: Style
@@ -198,6 +200,40 @@
                 <h2>Sveiki, aš Nojus Kėvelaitis esu dirbtinio intelekto sistemu studentas</h2>
                 <p>Esu VGTU studentas, studijuoju informatiką ir domiuosi tinklalapių kūrimu, duomenų apdorojimu, automatizavimu bei optimizavimu. Man patinka kurti funkcionalius ir estetiškus sprendimus, derinant dizainą su technologijomis. Laisvalaikiu mokausi naujų programavimo kalbų, eksperimentuoju su dirbtiniu intelektu ir siekiu tobulinti praktinius įgūdžius. Mano tikslas – tapti profesionaliu programuotoju, gebančiu kurti inovatyvius projektus bei dirbti tarptautinėje komandoje.</p>
               </div>
+
+                <!-- Custom Lists for Laboratory Task -->
+              <div class="custom-lists">
+
+                  <h3>Mano įgūdžių sritys</h3>
+
+                  <!-- NENUMERUOTAS SĄRAŠAS -->
+                  <ul class="custom-ul">
+                      <li>Programavimas
+                          <ul class="custom-ul"> <!-- Nested list -->
+                              <li>Python</li>
+                              <li>JavaScript</li>
+                          </ul>
+                      </li>
+                      <li>Dizainas</li>
+                      <li>Duomenų analizė</li>
+                  </ul>
+
+                  <h3>Mano darbo procesas</h3>
+
+                  <!-- NUMERUOTAS SĄRAŠAS -->
+                  <ol class="custom-ol">
+                      <li>Analizė</li>
+                      <li>Dizaino kūrimas
+                          <ol class="custom-ol"> <!-- Nested list -->
+                              <li>Wireframe</li>
+                              <li>UI maketas</li>
+                          </ol>
+                      </li>
+                      <li>Programavimas</li>
+                  </ol>
+
+              </div>
+              <!-- End of Custom Lists -->
 
               <div class="skills-grid">
                 <div class="skill-item" data-aos="zoom-in" data-aos-delay="400">
@@ -523,6 +559,38 @@
     <!-- Services Section -->
     <section id="services" class="services section">
 
+      <div class="container">
+        <h3>Paslaugų kainoraštis</h3>
+        <table class="service-table">
+          <thead>
+            <tr>
+              <th>Paslauga</th>
+              <th>Aprašymas</th>
+              <th>Kaina (EUR)</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Asmeninių svetainių kūrimas</td>
+              <td>Paprasti CV / portfolio / kontaktų puslapiai</td>
+              <td>100 €</td>
+            </tr>
+
+            <tr>
+              <td>Tinklalapių programavimas</td>
+              <td>Interaktyvūs puslapiai, API integracijos, duomenų apdorojimas</td>
+              <td>250 €</td>
+            </tr>
+            <tr>
+              <td>Dizaino paslaugos</td>
+              <td>UI/UX dizainas, prototipai, maketavimas</td>
+              <td>150 €</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
       <!-- Section Title -->
       <div class="container section-title">
         <h2>Services</h2>
@@ -541,7 +609,7 @@
               </div>
               <h3>Demo vaizdo įrašas</h3>
               
-              <video src="assets/media/video1.mp4" controls width="100%"></video>
+              <video src="assets/media/video1.mp4" controls class ="responsive-video"></video>
               <div class="card-links">
                 <a href="#" class="link-item">
                   Learn More
@@ -559,7 +627,8 @@
               </div>
               <h3>Youtube įrašas</h3>
               
-              <iframe width="100%" height="250" src="https://www.youtube.com/embed/BoUVIhtqjAw" title="YouTube video " frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe height="250" src="https://www.youtube.com/embed/BoUVIhtqjAw" title="YouTube video " 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
               <div class="card-links">
                 <a href="#" class="link-item">

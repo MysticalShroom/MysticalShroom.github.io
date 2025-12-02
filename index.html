@@ -152,19 +152,6 @@
 
           <div class="col-lg-6 hero-image" data-aos="fade-left" data-aos-delay="200">
             <div class="image-container">
-              <div class="floating-elements">
-                <div class="floating-card card-1" data-aos="zoom-in" data-aos-delay="300">
-                  <i class="bi bi-palette"></i>
-                  <span>UI/UX Design</span>
-                </div>
-                <div class="floating-card card-2" data-aos="zoom-in" data-aos-delay="400">
-                  <i class="bi bi-code-slash"></i>
-                  <span>Development</span>
-                </div>
-                <div class="floating-card card-3" data-aos="zoom-in" data-aos-delay="500">
-                  <i class="bi bi-lightning"></i>
-                  <span>Creative Ideas</span>
-                </div>
               </div>
               <img src="assets/img/profilepicture.png" alt="Portfolio nuotrauka" class="img-fluid hero-main-image">
               <div class="image-overlay"></div>
@@ -284,10 +271,6 @@
               </div>
 
               <div class="cta-section" data-aos="fade-up" data-aos-delay="400">
-                <div class="fun-fact">
-                  <span class="emoji">☕</span>
-                  <span class="text">Coffee-fueled designer based in Portland</span>
-                </div>
                 <div class="action-buttons">
                   <a href="#portfolio" class="btn btn-primary">View My Work</a>
                   <a href="#" class="btn btn-outline">Download Resume</a>
@@ -603,7 +586,6 @@
       <!-- Section Title -->
       <div class="container section-title">
         <h2>Services</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -861,8 +843,7 @@
 
       <!-- Section Title -->
       <div class="container section-title">
-        <h2>Contact</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <h2>Contact us</h2>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -871,16 +852,15 @@
           <div class="col-lg-5">
             <div class="info-box" data-aos="fade-up" data-aos-delay="200">
               <h3>Contact Info</h3>
-              <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ante ipsum primis.</p>
 
               <div class="info-item" data-aos="fade-up" data-aos-delay="300">
                 <div class="icon-box">
                   <i class="bi bi-geo-alt"></i>
                 </div>
                 <div class="content">
-                  <h4>Our Location</h4>
-                  <p>A108 Adam Street</p>
-                  <p>New York, NY 535022</p>
+                  <h4>Lokacija</h4>
+                  <p>Vilnius, Lietuva</p>
+                  <p>Dirbu nuotoliniu būdu visoje Lietuvoje</p>
                 </div>
               </div>
 
@@ -889,9 +869,9 @@
                   <i class="bi bi-telephone"></i>
                 </div>
                 <div class="content">
-                  <h4>Phone Number</h4>
-                  <p>+1 5589 55488 55</p>
-                  <p>+1 6678 254445 41</p>
+                  <h4>Telefono numeris</h4>
+                  <p>+370 6xx xxxxx</p>
+                  <p>Galima skambinti darbo dienomis 10:00–18:00</p>
                 </div>
               </div>
 
@@ -900,36 +880,59 @@
                   <i class="bi bi-envelope"></i>
                 </div>
                 <div class="content">
-                  <h4>Email Address</h4>
-                  <p>info@example.com</p>
-                  <p>contact@example.com</p>
+                  <h4>El. paštas</h4>
+                  <p>Tom@gmail.com</p>
+                  <p>Atsakau per 1–2 darbo dienas</p>
                 </div>
               </div>
+
             </div>
           </div>
 
           <div class="col-lg-7">
             <div class="contact-form" data-aos="fade-up" data-aos-delay="300">
               <h3>Get In Touch</h3>
-              <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ante ipsum primis.</p>
+              <p>Leave us a message</p>
 
-              <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <!-- <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200"></form> !-->
+              <form class="php-email-form">
                 <div class="row gy-4">
 
                   <div class="col-md-6">
-                    <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                    <input type="text" name="vardas" class="form-control" placeholder="Vardas" required="">
                   </div>
 
-                  <div class="col-md-6 ">
-                    <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                  <div class="col-md-6">
+                    <input type="text" name="pavarde" class="form-control" placeholder="Pavardė" required="">
+                  </div>
+
+                  <div class="col-md-6">
+                    <input type="email" name="email" class="form-control" placeholder="El. paštas" required="">
+                  </div>
+
+                  <div class="col-md-6">
+                    <input type="tel" name="telefonas" class="form-control" placeholder="Telefono numeris">
                   </div>
 
                   <div class="col-12">
-                    <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                    <input type="text" name="adresas" class="form-control" placeholder="Adresas">
+                  </div>
+
+                  <hr>
+
+                  <div class="col-12">
+                    <label>Kaip vertinate bendrą įspūdį? <span id="val1">5</span>/10</label>
+                    <input type="range" min="0" max="10" value="5" name="q1" class="form-range" oninput="val1.textContent = this.value">
                   </div>
 
                   <div class="col-12">
-                    <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                    <label>Kaip vertinate dizainą? <span id="val2">5</span>/10</label>
+                    <input type="range" min="0" max="10" value="5" name="q2" class="form-range" oninput="val2.textContent = this.value">
+                  </div>
+
+                  <div class="col-12">
+                    <label>Kaip vertinate funkcionalumą? <span id="val3">5</span>/10</label>
+                    <input type="range" min="0" max="10" value="5" name="q3" class="form-range" oninput="val3.textContent = this.value">
                   </div>
 
                   <div class="col-12 text-center">
@@ -937,11 +940,12 @@
                     <div class="error-message"></div>
                     <div class="sent-message">Your message has been sent. Thank you!</div>
 
-                    <button type="submit" class="btn">Send Message</button>
+                    <button type="submit" class="btn">Submit</button>
                   </div>
 
                 </div>
               </form>
+
 
             </div>
           </div>
@@ -951,6 +955,46 @@
       </div>
 
     </section><!-- /Contact Section -->
+
+    <!-- Memory Game Section -->
+
+    <section id="memory-game" class="game-section section light-background">
+
+      <div class="container section-title">
+        <h2>Mano Žaidimas</h2>
+        <p>Atminties kortelių žaidimas (Flip Card Memory)</p>
+      </div>
+
+      <div class="container">
+
+        <div class="difficulty-select">
+          <label>Pasirinkite sudėtingumą:</label>
+          <select id="difficulty">
+            <option value="easy">Lengvas (4×3)</option>
+            <option value="hard">Sunkus (6×4)</option>
+          </select>
+        </div>
+
+        <div class="game-buttons">
+          <button id="startGame" class="btn btn-primary">Start</button>
+          <button id="resetGame" class="btn btn-outline">Atnaujinti</button>
+        </div>
+
+        <div class="stats">
+          <p>Ėjimai: <span id="moves">0</span></p>
+          <p>Poros: <span id="matches">0</span></p>
+          <p>Laikas: <span id="time">0.0</span>s</p>
+          <p>Geriausias rezultatas (lengvas): <span id="bestEasy">-</span></p>
+          <p>Geriausias rezultatas (sunkus): <span id="bestHard">-</span></p>
+
+        </div>
+
+        <div id="gameBoard" class="game-board"></div>
+
+        <div id="winMessage" class="win-message">Laimėjote!</div>
+
+      </div>
+    </section>
 
   </main>
 
@@ -982,7 +1026,7 @@
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <!-- <script src="assets/vendor/php-email-form/validate.js"></script> -->
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/typed.js/typed.umd.js"></script>
@@ -994,6 +1038,9 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script src="assets/js/custom.js"></script>
+
 
 </body>
 

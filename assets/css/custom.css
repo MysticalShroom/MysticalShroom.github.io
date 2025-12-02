@@ -377,3 +377,111 @@ a:active {
         animation: none !important;
     }
 }
+
+/* LD 11 */
+
+.success-popup {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #4CAF50;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    font-size: 18px;
+    z-index: 9999;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: all 0.4s ease;
+}
+
+.success-popup.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.input-error {
+    border: 2px solid #e00000 !important;
+    background: #ffe5e5 !important;
+}
+
+.error-text {
+    color: #e00000;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.success-popup {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #4CAF50;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 10px;
+    font-size: 18px;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: 0.4s;
+    z-index: 9999;
+}
+
+.success-popup.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* LD 12 */
+/* Žaidimo lenta */
+.game-board {
+  display: grid;
+  gap: 10px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+/* Viena kortelė */
+.memory-card {
+  width: 100px;
+  height: 100px;
+  background: #dcdcdc;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.memory-card.flipped {
+  background: #9cd7ff;
+  transform: scale(1.05);
+}
+
+.memory-card.matched {
+  background: #8effae;
+  cursor: default;
+}
+
+.win-message {
+  margin-top: 20px;
+  display: none;
+  font-size: 30px;
+  text-align: center;
+  color: green;
+  font-weight: bold;
+}
+
+.win-message.show {
+  display: block;
+}
+
+#memory-game {
+    padding-bottom: 400px !important;
+    display: block;
+}
+

@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    const form = document.querySelector(".php-email-form");
+    const form = document.querySelector(".my-form");
     const submitBtn = form.querySelector("button[type='submit']");
 
     function showError(input, message) {
@@ -110,6 +110,8 @@ document.addEventListener("DOMContentLoaded", () => {
         if (!valid) return;
 
         const data = Object.fromEntries(new FormData(form));
+
+        console.log("Formos duomenys:", data);
 
         const vidurkis = (
             (Number(data.q1) + Number(data.q2) + Number(data.q3)) / 3
